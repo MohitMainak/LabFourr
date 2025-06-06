@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript Lab Exercises 1 to 10</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+      background: white;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>JavaScript Exercises 1 to 10</h1>
+
+  <div>
+    <button onclick="loadExercise(1)">Exercise 1</button>
+    <button onclick="loadExercise(2)">Exercise 2</button>
+    <button onclick="loadExercise(3)">Exercise 3</button>
+    <button onclick="loadExercise(4)">Exercise 4</button>
+    <button onclick="loadExercise(5)">Exercise 5</button>
+    <button onclick="loadExercise(6)">Exercise 6</button>
+    <button onclick="loadExercise(7)">Exercise 7</button>
+    <button onclick="loadExercise(8)">Exercise 8</button>
+    <button onclick="loadExercise(9)">Exercise 9</button>
+    <button onclick="loadExercise(10)">Exercise 10</button>
+  </div>
+
+  <iframe id="exerciseFrame" src=""></iframe>
+
+  <script>
+    function loadExercise(num) {
+      document.getElementById("exerciseFrame").src = "exercise-" + num + ".html";
+    }
+  </script>
+</body>
+</html>

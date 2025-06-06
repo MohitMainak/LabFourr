@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 9</title>
+</head>
+<body>
+    <h2>Enter a number:</h2>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button onclick="enter()">Enter</button>
+    <p id="output"></p>
+
+    <script>
+        function enter() {
+            let num = document.getElementById("numberInput").value;
+            document.getElementById("output").innerText = `You entered: ${num}`;
+        }
+    </script>
+</body>
+</html>
